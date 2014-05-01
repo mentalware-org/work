@@ -2,7 +2,7 @@
         body {
            font-family:Segoe UI;
            color:white;    
-           margin:200;
+           margin:0;
            border-style:none;
            background-image: url('visions.png'); 
            overflow-x:hidden; 
