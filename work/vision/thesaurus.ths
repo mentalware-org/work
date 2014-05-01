@@ -1,0 +1,10 @@
+ID	Order	Class	Term	Tag	Expression	Background	Context	Created	Creator	Modified	Modifier	Version	Time	Start	Finish	Run	Index
+1	1		Mental Work	main		work process in mind		2013/12/28 21:21:34	IK	2013/12/28 21:32:28	IK	1					
+2	2		Life cycle	lifecycle		mental work is a reproduction stage of mentalware		2013/12/28 23:19:33	IK	2013/12/28 23:28:55	IK	2					
+3	3		Work layers	layers		concept-time-content  sandwich		2013/12/28 23:19:39	IK	2013/12/28 23:28:52	IK	2					
+8	4		Looper	looper				2014/01/06 22:58:36	IK	2014/01/06 22:58:42	IK	5					
+9	5		Dynamics	dynamics				2014/01/06 22:58:43	IK	2014/01/06 22:58:56	IK	5					
+4	6		Expressions	expression				2013/12/29 21:06:13	IK	2013/12/29 21:06:33	IK	3					True
+5	7		Sequence	sequence			4	2013/12/29 21:06:25	IK	2014/01/01 14:15:56	IK	4					
+6	8		Selection	selection			4	2013/12/29 21:06:39	IK	2013/12/29 21:06:46	IK	3					
+7	9		Arithmetic	arithmetic		add,sub,mul,div	4	2013/12/29 21:06:47	IK	2013/12/29 21:07:03	IK	3					

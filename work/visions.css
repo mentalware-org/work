@@ -1,0 +1,29 @@
+
+        body {
+           font-family:Segoe UI;
+           color:white;    
+           margin:0;
+           border-style:none;
+           background-image: url('visions.png'); 
+           overflow-x:hidden; 
+           overflow-y:hidden;            
+        }
+
+        a {text-decoration: none}
+        a:hover   { text-decoration:underline;}
+        
+        table {font-size:11pt}
+ 
+        .sel {
+            font-size:10pt;
+            width:64px; 
+            background-image:url('visions-sel.png'); 
+            text-align:center;
+            padding-left:8px;  
+            padding-right:8px;
+         }
+
+        .sel a {text-decoration: none} 
+        .sel a:hover   {text-decoration:underline; } 
+        .sel a:visited {color:#333333; } 
+        .sel a:link    {color:#000000; }         

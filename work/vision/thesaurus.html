@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+	<head>
+         <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+         <base target="vision" />
+         <link rel="stylesheet" type="text/css" href="vision.css" />
+
+		<style>
+                           
+                	#container {
+                        	min-width: 480px;
+                	}
+                
+                	table {
+                    		padding: 0;
+                    		margin:0;
+                    		border:0;
+                    		border-collapse:collapse;  
+                	}
+
+                 	td {
+                    		padding:4px; 
+
+                    		border-right-style:solid; 
+                    		border-right-width:1px;
+                    		border-right-color:#202020;  
+
+                    		border-top-style:solid; 
+                    		border-top-width:1px;
+                    		border-top-color:#202020;  
+                 	}
+
+		
+                	.level1 {
+                    		border-left-style:solid; 
+                    		border-left-width:1px;
+                    		border-left-color:#202020;  
+                    		background:#141428;
+                    		font-family:Tahoma;
+                                font-size:12pt;
+                  	}
+
+                 	.level1folder {
+                     		background:#141428;
+                    		font-family:Tahoma;
+                                font-size:12pt;
+                  	}
+
+                 	.level1item {
+                     		width:106px;
+                 	} 
+
+		
+                	.level2 {
+                    		border-left-style:solid; 
+                    		border-left-width:1px;
+                    		border-left-color:#202020;  
+                    		background:#000000;
+                    		font-family:Tahoma;
+                                font-size:10pt;
+                  	}
+
+                 	.level2folder {
+                     		background:#000000;
+                    		font-family:Tahoma;
+                                font-size:10pt;
+                  	}
+
+                 	.level2item {
+                     		width:83px;
+                 	} 
+
+		
+                	.level3 {
+                    		border-left-style:solid; 
+                    		border-left-width:1px;
+                    		border-left-color:#202020;  
+                    		background:#070714;
+                    		font-family:Tahoma;
+                                font-size:8pt;
+                  	}
+
+                 	.level3folder {
+                     		background:#070714;
+                    		font-family:Tahoma;
+                                font-size:8pt;
+                  	}
+
+                 	.level3item {
+                     		width:60px;
+                 	} 
+
+		
+                	.level4 {
+                    		border-left-style:solid; 
+                    		border-left-width:1px;
+                    		border-left-color:#202020;  
+                    		background:#181407;
+                    		font-family:Tahoma;
+                                font-size:8pt;
+                  	}
+
+                 	.level4folder {
+                     		background:#181407;
+                    		font-family:Tahoma;
+                                font-size:8pt;
+                  	}
+
+                 	.level4item {
+                     		width:37px;
+                 	} 
+
+		
+                	.level5 {
+                    		border-left-style:solid; 
+                    		border-left-width:1px;
+                    		border-left-color:#202020;  
+                    		background:#020204;
+                    		font-family:Tahoma;
+                                font-size:8pt;
+                  	}
+
+                 	.level5folder {
+                     		background:#020204;
+                    		font-family:Tahoma;
+                                font-size:8pt;
+                  	}
+
+                 	.level5item {
+                     		width:23px;
+                 	} 
+
+		
+
+                 	.levelbox {
+                     		border:0;
+                     		padding:0;
+                     		margin:0; 
+
+                     		border-left-style:solid;
+                     		border-left-width:1px;
+                     		border-left-color:#202020;
+                 	} 
+
+                        .backgroundcol {
+                        }
+
+                        .tagcol {
+                           width: 64px;
+                        }
+
+                        .expressioncol {
+                            width: 32px;  
+                        }
+
+                        .classcol {
+                            width: 128px; 
+                        }  
+  
+			.css-treeview ul,
+			.css-treeview li {
+				padding: 0;
+				margin: 0;
+				list-style: none;
+			}
+
+			.css-treeview input {
+				position: absolute;
+				opacity: 0;
+			}
+
+			.css-treeview {
+				font: normal 11px "Segoe UI", Arial, Sans-serif;
+				-moz-user-select: none;
+				-webkit-user-select: none;
+				user-select: none;
+			}
+
+			.css-treeview table + ul {
+				margin: 0 0 0 22px;
+			}
+
+			.css-treeview table + ul {
+				display: none;
+			}
+
+			.css-treeview label,
+			.css-treeview label::before {
+				cursor: pointer;
+			}
+
+			.css-treeview input:disabled + label {
+				cursor: default;
+				opacity: .6;
+			}
+
+			.css-treeview input:checked:not(:disabled) + table + ul {
+				display: block;
+				background-color:#F0F0E0
+			}
+
+			.css-treeview label {
+                    		padding-left:16px;
+			}
+
+			.css-treeview input + table {
+		    		background: url("open.png") no-repeat;
+                    		background-position: 0 0;
+                	}
+
+			.css-treeview input:checked + table {
+				background: url("close.png") no-repeat;
+                    		background-position: 0 0;
+			}
+
+			@media screen and (-webkit-min-device-pixel-ratio:0) {
+				.css-treeview {
+					-webkit-animation: webkit-adjacent-element-selector-bugfix infinite 1s;
+				}
+			
+				@-webkit-keyframes webkit-adjacent-element-selector-bugfix {
+					from { padding: 0;} 
+					to { padding: 0; }
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="css-treeview" id="container">
+			<ul> 
+				<table width=100% class="level1">  
+						<tr>
+		<td class="level1item">
+			<li class="level1item">
+				<a href="main/page.html">Mental Work</a>
+			</li>
+		</td>
+		<td class="backgroundcol">
+			work process in mind
+		</td>
+	</tr>
+	<tr>
+		<td class="level1item">
+			<li class="level1item">
+				<a href="lifecycle/page.html">Life cycle</a>
+			</li>
+		</td>
+		<td class="backgroundcol">
+			mental work is a reproduction stage of mentalware
+		</td>
+	</tr>
+	<tr>
+		<td class="level1item">
+			<li class="level1item">
+				<a href="layers/page.html">Work layers</a>
+			</li>
+		</td>
+		<td class="backgroundcol">
+			concept-time-content  sandwich
+		</td>
+	</tr>
+	<tr>
+		<td class="level1item">
+			<li class="level1item">
+				<a href="looper/page.html">Looper</a>
+			</li>
+		</td>
+		<td class="backgroundcol">
+			
+		</td>
+	</tr>
+	<tr>
+		<td class="level1item">
+			<li class="level1item">
+				<a href="dynamics/page.html">Dynamics</a>
+			</li>
+		</td>
+		<td class="backgroundcol">
+			
+		</td>
+	</tr>
+	<tr>
+		<td colspan=2 class="levelbox">                                                           
+			<li>
+                        	<input type="checkbox" id="item-6" checked/>
+                                <table width=100% class="level1folder">
+                                        <tr>
+                                                <td class="level1item">
+							<label for="item-6"> 																
+							</label>
+							<a href="expression/page.html">Expressions</a>
+						</td>
+                                                <td class="backgroundcol"> 
+							
+						</td> 
+                                        </tr>
+                                </table>                     
+				<ul>
+                                        <table width=100% class="level2">  
+							<tr>
+		<td class="level2item">
+			<li class="level2item">
+				<a href="sequence/page.html">Sequence</a>
+			</li>
+		</td>
+		<td class="backgroundcol">
+			
+		</td>
+	</tr>
+	<tr>
+		<td class="level2item">
+			<li class="level2item">
+				<a href="selection/page.html">Selection</a>
+			</li>
+		</td>
+		<td class="backgroundcol">
+			
+		</td>
+	</tr>
+	<tr>
+		<td class="level2item">
+			<li class="level2item">
+				<a href="arithmetic/page.html">Arithmetic</a>
+			</li>
+		</td>
+		<td class="backgroundcol">
+			add,sub,mul,div
+		</td>
+	</tr>
+
+                                        </table> 
+				</ul>
+			</li>
+		</td>
+	</tr>
+
+				</table>
+			</ul>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,34 @@
+        body {
+           font-family:Segoe UI;
+           font-size:100%;
+           color:#FFCC99;
+           margin:0;
+           border-style:none;
+           overflow-x:hidden;
+           overflow-y:hidden;
+           background-color:#000000;
+           border-top:1px dotted #303030;
+        }
+
+        a {text-decoration: none}
+        a:visited {color:#999999;}
+        a:link    {color:#999999;}
+        a:hover   {
+           color:#FF950E; 
+           text-decoration:underline;
+        }
+
+        table {font-size:80%}
+
+        .sel {    
+            background-color:#0A0A0A;
+            width:128px;
+            text-align:center;
+            padding-left:8px;  
+            padding-right:8px;
+        }
+
+        td {
+           border-right:1px dotted #333333    
+        } 
+
